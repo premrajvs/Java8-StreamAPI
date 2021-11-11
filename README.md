@@ -38,3 +38,13 @@ Method is passed as reference.
 # class 6
 More detailed example for a Method passed as reference.
 Added a separate method and called it by class reference since it is static
+
+# class 7
+This class shows how we can avoid mutation and ensure concurrency. Subsequent classes explains step by step how this is achieved. There are 3 steps
+    1. Stream
+    2. Map
+    3. reduce
+
+# class 8
+1. Creating Stream using .stream() method
+2. 
