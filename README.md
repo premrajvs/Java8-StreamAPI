@@ -47,4 +47,34 @@ This class shows how we can avoid mutation and ensure concurrency. Subsequent cl
 
 # class 8
 1. Creating Stream using .stream() method
-2. 
+2. To work on the data, we need a map object. Map needs functional object. This Function object takes 2 parameters. Integer type and return type. This Function interface has only 1 method named accept. This Function object can be passed to map method.
+3. Last step, is output the stream. I am using a Foreach method here for the same using Method reference
+
+# class 9
+Replacing Foreach with reduce. Reduce needs a BinaryOperator. This BinaryOperator interface has only defined methods (no abstract methods). However, this BinaryOperator interface implements BiFunction interface which has a accept abstract method.
+
+@FunctionalInterface
+public interface BinaryOperator<T> extends BiFunction<T,T,T>
+
+@FunctionalInterface
+public interface BiFunction<T, U, R> {
+
+/**
+     * Applies this function to the given arguments.
+     *
+     * @param t the first function argument
+     * @param u the second function argument
+     * @return the function result
+     */
+    R apply(T t, U u);
+
+Now, we have implemented stream -> map -> reduce. As next steps, we will reduce the number of lines of code and make it more efficient
+
+# class 10
+Applying the concepts learnt in class 2 to 4 for map method and reduce method
+
+# class 11
+Combined both map and reduce in the same line. This is the code we saw in class 7
+
+# class 12
+Same code but used method reference as part of the reduce method
