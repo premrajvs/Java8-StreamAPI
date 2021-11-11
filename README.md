@@ -87,3 +87,9 @@ After you stream the data, you check for a condition and once it is true for the
  
 Also, in terms of Improving Efficiency by Lazy Evaluation & Termination
 If we are only looking for 1 value, it is waste of time and resources to stream all the elements and filter and map. But actually, all these methods are Lazy methods. Which means that stream, map, filter, etc. do not wait for the predecessor to complete all the elements. Once 1 element is parsed, control moves to next part. So, for a huge data set, all these activities are happening concurrently which makes efficiency much better
+
+# General Notes about Stream API
+Stream Operations are of 2 types
+1. Intermediate Operations : anyMatch() distinct() filter() findFirst() flatmap() map() skip() sorted() collect()
+2. Terminal Operations : forEach, collect and reduce returns either void or non-stream result 
+Order of operations affect the performance. It is better to filter before other operations on the dataset
