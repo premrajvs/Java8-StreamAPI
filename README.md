@@ -78,3 +78,5 @@ Combined both map and reduce in the same line. This is the code we saw in class 
 
 # class 12
 Same code but used method reference as part of the reduce method
+
+# class 13 : Introduction to Predicate Interface
