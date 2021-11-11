@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class class13 {
+public class class14 {
     public static void main(String[] args) {
         somemethod();
     }
@@ -48,9 +48,8 @@ public class class13 {
             }
 
         };
-        System.out.println(myList.stream().filter(predicateImplementation).reduce(0, Integer::sum));
-        // OR
-        System.out.println(myList.stream().filter(t -> (t % 5 == 0)).reduce(0, Integer::sum));
+
+        System.out.println(myList.stream().filter(t -> (t % 5 == 0)).map(i -> i * 2).findFirst());
         // s1.forEach(System.out::println);
 
     }

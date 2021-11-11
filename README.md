@@ -80,3 +80,10 @@ Combined both map and reduce in the same line. This is the code we saw in class 
 Same code but used method reference as part of the reduce method
 
 # class 13 : Introduction to Predicate Interface
+Example of how to use Filter
+
+# class 14 : Introducing findFirst()
+After you stream the data, you check for a condition and once it is true for the first time, it exits
+ 
+Also, in terms of Improving Efficiency by Lazy Evaluation & Termination
+If we are only looking for 1 value, it is waste of time and resources to stream all the elements and filter and map. But actually, all these methods are Lazy methods. Which means that stream, map, filter, etc. do not wait for the predecessor to complete all the elements. Once 1 element is parsed, control moves to next part. So, for a huge data set, all these activities are happening concurrently which makes efficiency much better
