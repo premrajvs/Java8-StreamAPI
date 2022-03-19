@@ -9,5 +9,5 @@ public class class1 implements interface1, interface2 {
         System.out.println("class 1");
 
     }
-
+	// Defect-0319 change
 }
