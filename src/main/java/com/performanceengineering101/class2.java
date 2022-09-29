@@ -16,5 +16,4 @@ public class class2 {
             System.out.println(myList.get(i));
         }
     }
-	// Changes made on scrumble branch on 09/08 on new file
 }
