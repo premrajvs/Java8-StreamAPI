@@ -9,10 +9,4 @@ public class class1 implements interface1, interface2 {
         System.out.println("class 1");
 
     }
-<<<<<<< HEAD
-	// Changes made on develop branch on 09/07
-	// developer 1 making changes on 09/22 on master branch
-=======
-	// Changes made on scrumble branch on 09/07
->>>>>>> origin/scrumble
 }
